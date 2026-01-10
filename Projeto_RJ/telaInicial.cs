@@ -40,7 +40,9 @@ namespace Projeto_RJ
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+            senhaPref tela = new senhaPref();
+
+            //tela.ShowDialog();
         }
     }
 }

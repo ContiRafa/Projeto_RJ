@@ -121,7 +121,7 @@ namespace Projeto_RJ
         {
             telaInicial tela = new telaInicial();
 
-            tela.Show();
+            tela.ShowDialog();
         }
     }
 }
