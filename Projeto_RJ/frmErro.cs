@@ -16,5 +16,11 @@ namespace Projeto_RJ
         {
             InitializeComponent();
         }
+
+        private void lblNomeMedico_Click(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }

@@ -52,11 +52,11 @@
             dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonFace;
             dateTimePicker2.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonFace;
             dateTimePicker2.Enabled = false;
-            dateTimePicker2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Bold);
+            dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             dateTimePicker2.Location = new System.Drawing.Point(1655, 25);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new System.Drawing.Size(222, 33);
+            dateTimePicker2.Size = new System.Drawing.Size(222, 32);
             dateTimePicker2.TabIndex = 6;
             // 
             // panel1
@@ -74,11 +74,11 @@
             // 
             this.lbl_name_header.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_name_header.AutoSize = true;
-            this.lbl_name_header.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_name_header.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name_header.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbl_name_header.Location = new System.Drawing.Point(28, 27);
             this.lbl_name_header.Name = "lbl_name_header";
-            this.lbl_name_header.Size = new System.Drawing.Size(205, 29);
+            this.lbl_name_header.Size = new System.Drawing.Size(218, 29);
             this.lbl_name_header.TabIndex = 7;
             this.lbl_name_header.Text = "TOTEM VIRTUAL";
             this.lbl_name_header.Click += new System.EventHandler(this.lbl_name_header_Click_1);
@@ -168,6 +168,7 @@
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "telaInicial";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.telaInicial_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

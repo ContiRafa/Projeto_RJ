@@ -31,5 +31,10 @@ namespace Projeto_RJ
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
