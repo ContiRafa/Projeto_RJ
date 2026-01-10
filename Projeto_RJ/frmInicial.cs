@@ -19,7 +19,7 @@ namespace Projeto_RJ
 
         private void frmInicial_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Teste");
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
