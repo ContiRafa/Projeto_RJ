@@ -69,7 +69,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(823, 375);
+            this.ClientSize = new System.Drawing.Size(824, 376);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

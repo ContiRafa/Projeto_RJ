@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_RJ
 {
-    public partial class Form2 : Form
+    public partial class modalError : Form
     {
-        public Form2()
+        public modalError()
         {
             InitializeComponent();
         }
