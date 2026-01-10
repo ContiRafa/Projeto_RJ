@@ -29,11 +29,35 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DateTimePicker dateTimePicker2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaInicial));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name_header = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.containerImagem = new System.Windows.Forms.PictureBox();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.containerImagem)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            dateTimePicker2.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.CalendarMonthBackground = System.Drawing.Color.DarkOrange;
+            dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.Enabled = false;
+            dateTimePicker2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Bold);
+            dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            dateTimePicker2.Location = new System.Drawing.Point(1655, 25);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new System.Drawing.Size(222, 33);
+            dateTimePicker2.TabIndex = 6;
             // 
             // panel1
             // 
@@ -52,37 +76,95 @@
             this.lbl_name_header.AutoSize = true;
             this.lbl_name_header.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_name_header.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbl_name_header.Location = new System.Drawing.Point(9, 24);
+            this.lbl_name_header.Location = new System.Drawing.Point(28, 27);
             this.lbl_name_header.Name = "lbl_name_header";
             this.lbl_name_header.Size = new System.Drawing.Size(205, 29);
-            this.lbl_name_header.TabIndex = 5;
+            this.lbl_name_header.TabIndex = 7;
             this.lbl_name_header.Text = "TOTEM VIRTUAL";
-            this.lbl_name_header.Click += new System.EventHandler(this.lbl_name_header_Click);
+            this.lbl_name_header.Click += new System.EventHandler(this.lbl_name_header_Click_1);
             // 
-            // dateTimePicker2
+            // panel2
             // 
-            dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            dateTimePicker2.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.CalendarMonthBackground = System.Drawing.Color.DarkOrange;
-            dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.Enabled = false;
-            dateTimePicker2.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Bold);
-            dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new System.Drawing.Point(1669, 24);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new System.Drawing.Size(222, 33);
-            dateTimePicker2.TabIndex = 6;
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.containerImagem);
+            this.panel2.Controls.Add(this.btnIniciar);
+            this.panel2.Location = new System.Drawing.Point(655, 148);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(600, 835);
+            this.panel2.TabIndex = 9;
+            // 
+            // containerImagem
+            // 
+            this.containerImagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.containerImagem.Image = ((System.Drawing.Image)(resources.GetObject("containerImagem.Image")));
+            this.containerImagem.Location = new System.Drawing.Point(0, 0);
+            this.containerImagem.Name = "containerImagem";
+            this.containerImagem.Size = new System.Drawing.Size(600, 200);
+            this.containerImagem.TabIndex = 9;
+            this.containerImagem.TabStop = false;
+            // 
+            // btnIniciar
+            // 
+            this.btnIniciar.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnIniciar.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.Location = new System.Drawing.Point(0, 401);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(600, 80);
+            this.btnIniciar.TabIndex = 10;
+            this.btnIniciar.Text = "RECEPÇÃO";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Cyan;
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(0, 576);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(600, 80);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "RETIRADA DE EXAMES";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button3.Location = new System.Drawing.Point(0, 751);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(600, 80);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "VOLTAR";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gold;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 226);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(600, 80);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "ATENDIMENTO PRIORITÁRIO";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // telaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "telaInicial";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.containerImagem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -91,5 +173,11 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_name_header;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox containerImagem;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }

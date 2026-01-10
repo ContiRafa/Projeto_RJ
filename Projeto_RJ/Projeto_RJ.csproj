@@ -46,22 +46,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="telaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="telaInicial.Designer.cs">
       <DependentUpon>telaInicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmInicial.cs">
+    <Compile Include="senhaPref.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInicial.Designer.cs">
-      <DependentUpon>frmInicial.cs</DependentUpon>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>senhaPref.cs</DependentUpon>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmInicial.resx">
-      <DependentUpon>frmInicial.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="senhaPref.resx">
+      <DependentUpon>senhaPref.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
