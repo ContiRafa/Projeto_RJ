@@ -13,6 +13,8 @@ namespace Projeto_RJ
 {
     public partial class telaInicial : Form
     {
+        public object frmInicial_Load { get; private set; }
+
         public telaInicial()
         {
             InitializeComponent();
@@ -42,7 +44,22 @@ namespace Projeto_RJ
         {
             senhaPref tela = new senhaPref();
 
-            //tela.ShowDialog();
+            tela.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void telaInicial_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

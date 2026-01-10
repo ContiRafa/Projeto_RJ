@@ -52,7 +52,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="senhaPref1.cs" />
+    <Compile Include="frmSucesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSucesso.Designer.cs">
+      <DependentUpon>frmSucesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="senhaPref1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="telaInicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +78,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSucesso.resx">
+      <DependentUpon>frmSucesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="senhaPref1.resx">
+      <DependentUpon>senhaPref1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tela_INICIO.resx">
       <DependentUpon>tela_INICIO.cs</DependentUpon>

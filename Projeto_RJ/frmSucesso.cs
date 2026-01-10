@@ -10,24 +10,19 @@ using System.Windows.Forms;
 
 namespace Projeto_RJ
 {
-    public partial class Form1 : Form
+    public partial class modalSucess : Form
     {
-        public Form1()
+        public modalSucess()
         {
             InitializeComponent();
         }
 
-        private void lbl_preferencial_Click(object sender, EventArgs e)
-        {
-            Width = 19;
-        }
-
-        public void label2_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form2_Load(object sender, EventArgs e)
         {
 
         }

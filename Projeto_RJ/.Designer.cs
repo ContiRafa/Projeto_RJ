@@ -108,6 +108,7 @@
             // btnIniciar
             // 
             this.btnIniciar.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.Location = new System.Drawing.Point(0, 347);
             this.btnIniciar.Name = "btnIniciar";

@@ -1,7 +1,23 @@
 ﻿namespace Projeto_RJ
 {
-    internal class senhaPref
+    public class senhaPref : Form1
     {
+        private System.ComponentModel.IContainer components;
 
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // senhaPref
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Name = "senhaPref";
+            this.ResumeLayout(false);
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {                   }
     }
 }

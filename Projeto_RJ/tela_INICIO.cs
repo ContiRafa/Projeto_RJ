@@ -20,7 +20,7 @@ namespace Projeto_RJ
             InitializeComponent();
         }
 
-        private void frmInicial_Load(object sender, EventArgs e)
+        public void frmInicial_Load(object sender, EventArgs e)
         {
             
         }
@@ -60,7 +60,7 @@ namespace Projeto_RJ
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo("pt-BR");
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("pt-BR");
