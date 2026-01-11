@@ -29,6 +29,7 @@ namespace Projeto_RJ
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
+            
             this.Close();
         }
     }

@@ -131,6 +131,7 @@
             this.btnIniciar.TabIndex = 10;
             this.btnIniciar.Text = "RECEPÇÃO";
             this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // panel1
             // 

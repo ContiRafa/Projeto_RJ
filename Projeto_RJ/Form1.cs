@@ -36,5 +36,10 @@ namespace Projeto_RJ
         {
             this.Dispose();
         }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

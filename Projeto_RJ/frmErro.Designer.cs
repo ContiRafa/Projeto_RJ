@@ -49,6 +49,7 @@
             this.Controls.Add(this.lblNomePaciente);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "modalError";
+            this.Text = "\'";
             this.ResumeLayout(false);
             this.PerformLayout();
 
