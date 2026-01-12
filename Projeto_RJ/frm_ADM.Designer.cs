@@ -80,6 +80,7 @@
             // btn_gestaoSenhas
             // 
             this.btn_gestaoSenhas.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_gestaoSenhas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_gestaoSenhas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_gestaoSenhas.Image = ((System.Drawing.Image)(resources.GetObject("btn_gestaoSenhas.Image")));
             this.btn_gestaoSenhas.Location = new System.Drawing.Point(8, 99);
@@ -97,6 +98,7 @@
             // btn_controleSenha
             // 
             this.btn_controleSenha.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_controleSenha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_controleSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_controleSenha.Image = ((System.Drawing.Image)(resources.GetObject("btn_controleSenha.Image")));
             this.btn_controleSenha.Location = new System.Drawing.Point(176, 99);
@@ -113,6 +115,7 @@
             // btn_config
             // 
             this.btn_config.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_config.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_config.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_config.Image = ((System.Drawing.Image)(resources.GetObject("btn_config.Image")));
             this.btn_config.Location = new System.Drawing.Point(344, 99);
@@ -140,6 +143,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clínica Exames";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_ADM_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

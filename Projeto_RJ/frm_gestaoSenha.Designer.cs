@@ -33,9 +33,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name_header = new System.Windows.Forms.Label();
             this.panel_atendimentoTotal = new System.Windows.Forms.Panel();
-            this.lbl_atTotal = new System.Windows.Forms.Label();
-            this.lbl_qtdPessoas = new System.Windows.Forms.Label();
             this.lbl_quantidade = new System.Windows.Forms.Label();
+            this.lbl_qtdPessoas = new System.Windows.Forms.Label();
+            this.lbl_atTotal = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_qtd = new System.Windows.Forms.Label();
             this.lbl_pessoas = new System.Windows.Forms.Label();
@@ -56,6 +56,21 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            dateTimePicker2.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.CalendarMonthBackground = System.Drawing.Color.DarkOrange;
+            dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.Enabled = false;
+            dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            dateTimePicker2.Location = new System.Drawing.Point(1655, 25);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new System.Drawing.Size(222, 32);
+            dateTimePicker2.TabIndex = 6;
             // 
             // panel1
             // 
@@ -80,21 +95,6 @@
             this.lbl_name_header.TabIndex = 7;
             this.lbl_name_header.Text = "PAINEL INICIAL > GESTÃO DE SENHAS";
             // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            dateTimePicker2.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.CalendarMonthBackground = System.Drawing.Color.DarkOrange;
-            dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.Enabled = false;
-            dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new System.Drawing.Point(1655, 25);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new System.Drawing.Size(222, 32);
-            dateTimePicker2.TabIndex = 6;
-            // 
             // panel_atendimentoTotal
             // 
             this.panel_atendimentoTotal.BackColor = System.Drawing.Color.Green;
@@ -108,18 +108,17 @@
             this.panel_atendimentoTotal.Size = new System.Drawing.Size(200, 200);
             this.panel_atendimentoTotal.TabIndex = 13;
             // 
-            // lbl_atTotal
+            // lbl_quantidade
             // 
-            this.lbl_atTotal.AutoSize = true;
-            this.lbl_atTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_atTotal.Location = new System.Drawing.Point(15, 18);
-            this.lbl_atTotal.Margin = new System.Windows.Forms.Padding(0);
-            this.lbl_atTotal.Name = "lbl_atTotal";
-            this.lbl_atTotal.Size = new System.Drawing.Size(170, 16);
-            this.lbl_atTotal.TabIndex = 0;
-            this.lbl_atTotal.Text = "ATENDIMENTO TOTAL";
-            this.lbl_atTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lbl_atTotal.Click += new System.EventHandler(this.lbl_atTotal_Click);
+            this.lbl_quantidade.AutoSize = true;
+            this.lbl_quantidade.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_quantidade.Location = new System.Drawing.Point(43, 56);
+            this.lbl_quantidade.Name = "lbl_quantidade";
+            this.lbl_quantidade.Size = new System.Drawing.Size(115, 86);
+            this.lbl_quantidade.TabIndex = 2;
+            this.lbl_quantidade.Text = "20";
+            this.lbl_quantidade.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_quantidade.Click += new System.EventHandler(this.lbl_quantidade_Click);
             // 
             // lbl_qtdPessoas
             // 
@@ -133,17 +132,18 @@
             this.lbl_qtdPessoas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_qtdPessoas.Click += new System.EventHandler(this.lbl_qtdPessoas_Click);
             // 
-            // lbl_quantidade
+            // lbl_atTotal
             // 
-            this.lbl_quantidade.AutoSize = true;
-            this.lbl_quantidade.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_quantidade.Location = new System.Drawing.Point(43, 56);
-            this.lbl_quantidade.Name = "lbl_quantidade";
-            this.lbl_quantidade.Size = new System.Drawing.Size(115, 86);
-            this.lbl_quantidade.TabIndex = 2;
-            this.lbl_quantidade.Text = "20";
-            this.lbl_quantidade.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_quantidade.Click += new System.EventHandler(this.lbl_quantidade_Click);
+            this.lbl_atTotal.AutoSize = true;
+            this.lbl_atTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_atTotal.Location = new System.Drawing.Point(15, 18);
+            this.lbl_atTotal.Margin = new System.Windows.Forms.Padding(0);
+            this.lbl_atTotal.Name = "lbl_atTotal";
+            this.lbl_atTotal.Size = new System.Drawing.Size(170, 16);
+            this.lbl_atTotal.TabIndex = 0;
+            this.lbl_atTotal.Text = "ATENDIMENTO TOTAL";
+            this.lbl_atTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbl_atTotal.Click += new System.EventHandler(this.lbl_atTotal_Click);
             // 
             // panel2
             // 
@@ -298,6 +298,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.OrangeRed;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(911, 182);
@@ -323,6 +324,7 @@
             this.Name = "frm_gestaoSenha";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliníca Exames";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frm_gestaoSenha_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

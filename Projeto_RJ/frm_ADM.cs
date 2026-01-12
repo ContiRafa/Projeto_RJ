@@ -21,7 +21,8 @@ namespace Projeto_RJ
 
         private void btn_gestaoSenhas_Click(object sender, EventArgs e)
         {
-            
+            frm_gestaoSenha telaabrir = new frm_gestaoSenha();
+            telaabrir.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,6 +30,9 @@ namespace Projeto_RJ
 
         }
 
-        
+        private void frm_ADM_Load(object sender, EventArgs e)
+        {
+            // COLOCAR VALIDAÇÃO DE LOGIN DE ADMINISTRADOR AQUI PARA DESATIVAR BOTÃO DE GESTÃO DE SENHAS SE NÃO FOR ADMIN
+        }
     }
 }
