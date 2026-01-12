@@ -29,34 +29,53 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(modalError));
-            this.lblNomePaciente = new System.Windows.Forms.Label();
+            this.btnIniciar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblNomePaciente
+            // btnIniciar
             // 
-            this.lblNomePaciente.AutoSize = true;
-            this.lblNomePaciente.Location = new System.Drawing.Point(197, 127);
-            this.lblNomePaciente.Name = "lblNomePaciente";
-            this.lblNomePaciente.Size = new System.Drawing.Size(91, 13);
-            this.lblNomePaciente.TabIndex = 0;
-            this.lblNomePaciente.Text = "Nome do Médico:";
+            this.btnIniciar.BackColor = System.Drawing.Color.Red;
+            this.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIniciar.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIniciar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnIniciar.Location = new System.Drawing.Point(240, 295);
+            this.btnIniciar.Name = "btnIniciar";
+            this.btnIniciar.Size = new System.Drawing.Size(320, 60);
+            this.btnIniciar.TabIndex = 13;
+            this.btnIniciar.Text = "FECHAR";
+            this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(65, 95);
+            this.label1.Margin = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(694, 114);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "SENHA PREFERENCIAL GERADA COM SUCESSO !";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // modalError
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblNomePaciente);
+            this.Controls.Add(this.btnIniciar);
+            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "modalError";
             this.Text = "\'";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblNomePaciente;
+        private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Label label1;
     }
 }

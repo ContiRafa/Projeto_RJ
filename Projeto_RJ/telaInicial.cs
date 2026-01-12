@@ -37,7 +37,8 @@ namespace Projeto_RJ
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-
+            modalSucess telaok = new modalSucess();
+            telaok.ShowDialog();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -54,7 +55,8 @@ namespace Projeto_RJ
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            modalSucess telaok = new modalSucess();
+            telaok.ShowDialog();
         }
 
         private void telaInicial_Load(object sender, EventArgs e)

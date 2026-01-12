@@ -119,7 +119,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(600, 80);
             this.button3.TabIndex = 13;
-            this.button3.Text = "VOLTAR";
+            this.button3.Text = "SAIR";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -167,7 +167,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "telaInicial";
+            this.Text = " Clínica Exames";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.telaInicial_Load);
             this.panel1.ResumeLayout(false);

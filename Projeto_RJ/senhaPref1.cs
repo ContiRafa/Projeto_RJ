@@ -12,8 +12,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "senhaPref";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Text = "Clínica Exames";
             this.Load += new System.EventHandler(this.senhaPref_Load);
             this.ResumeLayout(false);
 
