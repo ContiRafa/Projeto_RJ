@@ -35,10 +35,8 @@
             this.btn_gestaoSenhas = new System.Windows.Forms.Button();
             this.btn_controleSenha = new System.Windows.Forms.Button();
             this.btn_config = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateTimePicker2
@@ -75,18 +73,19 @@
             this.lbl_name_header.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lbl_name_header.Location = new System.Drawing.Point(28, 27);
             this.lbl_name_header.Name = "lbl_name_header";
-            this.lbl_name_header.Size = new System.Drawing.Size(218, 29);
+            this.lbl_name_header.Size = new System.Drawing.Size(198, 29);
             this.lbl_name_header.TabIndex = 7;
-            this.lbl_name_header.Text = "TOTEM VIRTUAL";
+            this.lbl_name_header.Text = "PAINEL INICIAL";
             // 
             // btn_gestaoSenhas
             // 
             this.btn_gestaoSenhas.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_gestaoSenhas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_gestaoSenhas.Image = ((System.Drawing.Image)(resources.GetObject("btn_gestaoSenhas.Image")));
-            this.btn_gestaoSenhas.Location = new System.Drawing.Point(8, 8);
+            this.btn_gestaoSenhas.Location = new System.Drawing.Point(8, 99);
+            this.btn_gestaoSenhas.Margin = new System.Windows.Forms.Padding(0);
             this.btn_gestaoSenhas.Name = "btn_gestaoSenhas";
-            this.btn_gestaoSenhas.Padding = new System.Windows.Forms.Padding(0, 0, 0, 30);
+            this.btn_gestaoSenhas.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.btn_gestaoSenhas.Size = new System.Drawing.Size(150, 150);
             this.btn_gestaoSenhas.TabIndex = 12;
             this.btn_gestaoSenhas.Text = "Gestão de Senhas";
@@ -100,13 +99,15 @@
             this.btn_controleSenha.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_controleSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_controleSenha.Image = ((System.Drawing.Image)(resources.GetObject("btn_controleSenha.Image")));
-            this.btn_controleSenha.Location = new System.Drawing.Point(164, 8);
+            this.btn_controleSenha.Location = new System.Drawing.Point(176, 99);
+            this.btn_controleSenha.Margin = new System.Windows.Forms.Padding(0);
             this.btn_controleSenha.Name = "btn_controleSenha";
-            this.btn_controleSenha.Padding = new System.Windows.Forms.Padding(0, 0, 0, 30);
+            this.btn_controleSenha.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.btn_controleSenha.Size = new System.Drawing.Size(150, 150);
             this.btn_controleSenha.TabIndex = 13;
             this.btn_controleSenha.Text = "Controle de Senhas";
             this.btn_controleSenha.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_controleSenha.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_controleSenha.UseVisualStyleBackColor = false;
             // 
             // btn_config
@@ -114,33 +115,25 @@
             this.btn_config.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btn_config.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_config.Image = ((System.Drawing.Image)(resources.GetObject("btn_config.Image")));
-            this.btn_config.Location = new System.Drawing.Point(320, 8);
+            this.btn_config.Location = new System.Drawing.Point(344, 99);
+            this.btn_config.Margin = new System.Windows.Forms.Padding(0);
             this.btn_config.Name = "btn_config";
-            this.btn_config.Padding = new System.Windows.Forms.Padding(0, 0, 0, 30);
+            this.btn_config.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.btn_config.Size = new System.Drawing.Size(150, 150);
             this.btn_config.TabIndex = 14;
             this.btn_config.Text = "Configurações";
             this.btn_config.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_config.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_config.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btn_gestaoSenhas);
-            this.flowLayoutPanel1.Controls.Add(this.btn_controleSenha);
-            this.flowLayoutPanel1.Controls.Add(this.btn_config);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 91);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(683, 166);
-            this.flowLayoutPanel1.TabIndex = 15;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // frm_ADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.btn_gestaoSenhas);
+            this.Controls.Add(this.btn_controleSenha);
+            this.Controls.Add(this.btn_config);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_ADM";
@@ -149,7 +142,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -161,6 +153,5 @@
         private System.Windows.Forms.Button btn_gestaoSenhas;
         private System.Windows.Forms.Button btn_controleSenha;
         private System.Windows.Forms.Button btn_config;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
