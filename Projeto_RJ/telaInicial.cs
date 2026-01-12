@@ -43,9 +43,9 @@ namespace Projeto_RJ
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            senhaPref tela = new senhaPref();
+            Form1 tela = new Form1();
 
-            tela.ShowDialog();
+            tela.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
