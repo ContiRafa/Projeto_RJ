@@ -22,7 +22,7 @@ namespace Projeto_RJ
 
         public void frmInicial_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace Projeto_RJ
 
         private void lbl_name_header_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -68,12 +68,12 @@ namespace Projeto_RJ
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -89,7 +89,7 @@ namespace Projeto_RJ
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void groupBox1_Enter_3(object sender, EventArgs e)
@@ -118,10 +118,15 @@ namespace Projeto_RJ
         }
 
         private void button1_Click_1(object sender, EventArgs e)
-        {
-            telaInicial tela = new telaInicial();
+        { 
+            TOTEM telaabrir = new TOTEM();
+            telaabrir.Show();
+        }
 
-            tela.ShowDialog();
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            frm_ADM telaabrir = new frm_ADM();
+            telaabrir.Show();
         }
     }
 }

@@ -54,6 +54,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_gestaoSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_gestaoSenha.Designer.cs">
+      <DependentUpon>frm_gestaoSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ADM.Designer.cs">
+      <DependentUpon>frm_ADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="TOTEM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +110,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSucesso.resx">
       <DependentUpon>frmSucesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ADM.resx">
+      <DependentUpon>frm_ADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_gestaoSenha.resx">
+      <DependentUpon>frm_gestaoSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="senhaPref1.resx">
       <DependentUpon>senhaPref1.cs</DependentUpon>

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TOTEM));
             System.Windows.Forms.DateTimePicker dateTimePicker2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TOTEM));
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIniciar = new System.Windows.Forms.Button();
@@ -41,6 +41,23 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            dateTimePicker2.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.CalendarMonthBackground = System.Drawing.Color.DarkOrange;
+            dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.Enabled = false;
+            dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            dateTimePicker2.Location = new System.Drawing.Point(1028, 27);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new System.Drawing.Size(222, 32);
+            dateTimePicker2.TabIndex = 6;
+            // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -48,7 +65,7 @@
             this.panel2.Controls.Add(this.btnIniciar);
             this.panel2.Location = new System.Drawing.Point(334, 106);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 432);
+            this.panel2.Size = new System.Drawing.Size(600, 359);
             this.panel2.TabIndex = 10;
             // 
             // pictureBox1
@@ -66,12 +83,13 @@
             this.btnIniciar.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciar.Location = new System.Drawing.Point(0, 347);
+            this.btnIniciar.Location = new System.Drawing.Point(-3, 270);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(600, 80);
             this.btnIniciar.TabIndex = 10;
             this.btnIniciar.Text = "TOQUE PARA INICIAR";
             this.btnIniciar.UseVisualStyleBackColor = false;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // panel1
             // 
@@ -96,23 +114,6 @@
             this.lbl_name_header.TabIndex = 5;
             this.lbl_name_header.Text = "TOTEM VIRTUAL";
             // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            dateTimePicker2.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.CalendarMonthBackground = System.Drawing.Color.DarkOrange;
-            dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.Enabled = false;
-            dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new System.Drawing.Point(1028, 27);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new System.Drawing.Size(222, 32);
-            dateTimePicker2.TabIndex = 6;
-            // 
             // TOTEM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +123,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TOTEM";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clínica Exames";
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

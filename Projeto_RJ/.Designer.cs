@@ -33,6 +33,7 @@
             this.lbl_name_header = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -87,12 +88,26 @@
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnIniciar);
             this.panel2.Location = new System.Drawing.Point(335, 105);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(600, 432);
             this.panel2.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gold;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 176);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(600, 80);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "ADMINISTRATIVO";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // pictureBox1
             // 
@@ -114,7 +129,7 @@
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(600, 80);
             this.btnIniciar.TabIndex = 10;
-            this.btnIniciar.Text = "TOQUE PARA INICIAR";
+            this.btnIniciar.Text = "TOTEM";
             this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.button1_Click_1);
             // 
@@ -129,6 +144,7 @@
             this.MaximizeBox = false;
             this.Name = "frmInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Clínica Exames";
             this.Load += new System.EventHandler(this.frmInicial_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -144,6 +160,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnIniciar;
+        private System.Windows.Forms.Button button1;
     }
 }
 

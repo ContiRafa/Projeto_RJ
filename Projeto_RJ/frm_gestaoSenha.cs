@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace Projeto_RJ
 {
-    public partial class TOTEM : Form
+    public partial class frm_gestaoSenha : Form
     {
-        public TOTEM()
+        public frm_gestaoSenha()
         {
             InitializeComponent();
         }
 
-        private void btnIniciar_Click(object sender, EventArgs e)
+        private void frm_gestaoSenha_Load(object sender, EventArgs e)
         {
-            //ABRIR TELA INCIAL DAS SENHAS
-            telaInicial telaabrir = new telaInicial();
-            telaabrir.Show();
-        }
 
-           
-        
+        }
     }
 }
