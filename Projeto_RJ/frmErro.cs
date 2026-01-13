@@ -31,5 +31,10 @@ namespace Projeto_RJ
         {
 
         }
+
+        private void modalError_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -69,6 +69,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "modalError";
             this.Text = "\'";
+            this.Load += new System.EventHandler(this.modalError_Load);
             this.ResumeLayout(false);
 
         }

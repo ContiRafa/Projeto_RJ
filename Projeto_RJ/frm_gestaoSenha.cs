@@ -32,6 +32,7 @@ namespace Projeto_RJ
         private void lbl_quantidade_Click(object sender, EventArgs e)
         {
             // QUANTIDADE DE ATENDIMENTOS PUXADA VIA BANCO EX: lbl_quantidade.Text = "quantidade puxada via banco(25)";
+
         }
 
         private void lbl_qtdPessoas_Click(object sender, EventArgs e)
@@ -112,6 +113,9 @@ namespace Projeto_RJ
             //BOTAO PARA ATUALIZAR AS INFORMAÇÕES DA TELA OU FAZER ESQUEMA AUTOMATICO DE PUSHAR AS INFORMAÇÕES
         }
 
-
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

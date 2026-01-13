@@ -24,7 +24,9 @@ namespace Projeto_RJ
             telaabrir.Show();
         }
 
-           
-        
+        private void TOTEM_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
