@@ -29,8 +29,11 @@ namespace Projeto_RJ
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            
+
             this.Close();
+
+            // inserir um código para fechar todas as outras forms abertas, se houver ==> por que ao fechar o modal correspondente a tela, ele deixa
+            //outras abas abertas.
         }
     }
 }

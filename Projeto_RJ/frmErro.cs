@@ -24,7 +24,7 @@ namespace Projeto_RJ
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnIniciar_Click(object sender, EventArgs e)

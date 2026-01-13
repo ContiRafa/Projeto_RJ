@@ -39,12 +39,14 @@ namespace Projeto_RJ
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            
+            modalSucess tela = new modalSucess();
+            tela.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            modalSucess tela = new modalSucess();
+            tela.Show();
         }
     }
 }

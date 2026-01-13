@@ -81,7 +81,7 @@
             this.MaximumSize = new System.Drawing.Size(1872, 882);
             this.MinimizeBox = false;
             this.Name = "modalSucess";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clínica Exames";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();

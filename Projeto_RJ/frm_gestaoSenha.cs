@@ -32,6 +32,8 @@ namespace Projeto_RJ
         private void lbl_quantidade_Click(object sender, EventArgs e)
         {
             // QUANTIDADE DE ATENDIMENTOS PUXADA VIA BANCO EX: lbl_quantidade.Text = "quantidade puxada via banco(25)";
+            
+
 
         }
 
