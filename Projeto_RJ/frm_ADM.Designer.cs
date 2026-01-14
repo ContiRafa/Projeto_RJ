@@ -35,6 +35,7 @@
             this.btn_gestaoSenhas = new System.Windows.Forms.Button();
             this.btn_controleSenha = new System.Windows.Forms.Button();
             this.btn_config = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -101,7 +102,7 @@
             this.btn_controleSenha.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_controleSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_controleSenha.Image = ((System.Drawing.Image)(resources.GetObject("btn_controleSenha.Image")));
-            this.btn_controleSenha.Location = new System.Drawing.Point(176, 99);
+            this.btn_controleSenha.Location = new System.Drawing.Point(200, 99);
             this.btn_controleSenha.Margin = new System.Windows.Forms.Padding(0);
             this.btn_controleSenha.Name = "btn_controleSenha";
             this.btn_controleSenha.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
@@ -111,6 +112,7 @@
             this.btn_controleSenha.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_controleSenha.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_controleSenha.UseVisualStyleBackColor = false;
+            this.btn_controleSenha.Click += new System.EventHandler(this.btn_controleSenha_Click);
             // 
             // btn_config
             // 
@@ -118,7 +120,7 @@
             this.btn_config.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_config.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_config.Image = ((System.Drawing.Image)(resources.GetObject("btn_config.Image")));
-            this.btn_config.Location = new System.Drawing.Point(344, 99);
+            this.btn_config.Location = new System.Drawing.Point(584, 99);
             this.btn_config.Margin = new System.Windows.Forms.Padding(0);
             this.btn_config.Name = "btn_config";
             this.btn_config.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
@@ -129,11 +131,30 @@
             this.btn_config.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_config.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(392, 99);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.button1.Size = new System.Drawing.Size(150, 150);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "senha_painel";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // frm_ADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_gestaoSenhas);
             this.Controls.Add(this.btn_controleSenha);
             this.Controls.Add(this.btn_config);
@@ -157,5 +178,6 @@
         private System.Windows.Forms.Button btn_gestaoSenhas;
         private System.Windows.Forms.Button btn_controleSenha;
         private System.Windows.Forms.Button btn_config;
+        private System.Windows.Forms.Button button1;
     }
 }

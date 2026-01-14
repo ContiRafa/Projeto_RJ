@@ -36,5 +36,16 @@ namespace Projeto_RJ
 
 
         }
+
+        private void btn_controleSenha_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_1(object sender, EventArgs e) //botão para acessar a tela de senhas ==>  (TV)
+        {
+            frm_telaSenhas frm_TelaSenhas = new frm_telaSenhas();
+            frm_TelaSenhas.Show();
+        }
     }
 }

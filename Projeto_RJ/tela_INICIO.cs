@@ -128,5 +128,11 @@ namespace Projeto_RJ
             frm_ADM telaabrir = new frm_ADM();
             telaabrir.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frm_telaSenhas frm_TelaSenhas = new frm_telaSenhas();
+            frm_TelaSenhas.Show();
+        }
     }
 }
