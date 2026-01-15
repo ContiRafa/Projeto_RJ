@@ -39,7 +39,8 @@ namespace Projeto_RJ
 
         private void btn_controleSenha_Click(object sender, EventArgs e)
         {
-            
+            frm_controleSenhas frm_ControleSenhas = new frm_controleSenhas();
+            frm_ControleSenhas.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e) //botão para acessar a tela de senhas ==>  (TV)
