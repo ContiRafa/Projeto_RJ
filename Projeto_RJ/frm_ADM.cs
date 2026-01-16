@@ -48,5 +48,11 @@ namespace Projeto_RJ
             frm_telaSenhas frm_TelaSenhas = new frm_telaSenhas();
             frm_TelaSenhas.Show();
         }
+
+        private void btn_config_Click(object sender, EventArgs e)
+        {
+            frm_usuarios frm_Usuarios = new frm_usuarios();
+            frm_Usuarios.Show();
+        }
     }
 }

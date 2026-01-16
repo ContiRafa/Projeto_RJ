@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_ADM));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name_header = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_gestaoSenhas = new System.Windows.Forms.Button();
             this.btn_controleSenha = new System.Windows.Forms.Button();
             this.btn_config = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,24 @@
             this.lbl_name_header.Size = new System.Drawing.Size(198, 29);
             this.lbl_name_header.TabIndex = 7;
             this.lbl_name_header.Text = "PAINEL INICIAL";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(392, 99);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.button1.Size = new System.Drawing.Size(150, 150);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "senha_painel";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btn_gestaoSenhas
             // 
@@ -130,24 +148,7 @@
             this.btn_config.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_config.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_config.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(392, 99);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.button1.Size = new System.Drawing.Size(150, 150);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "senha_painel";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btn_config.Click += new System.EventHandler(this.btn_config_Click);
             // 
             // frm_ADM
             // 

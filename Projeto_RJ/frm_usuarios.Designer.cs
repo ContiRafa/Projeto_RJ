@@ -35,7 +35,6 @@
             this.lbl_pesquisa_nome = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tbl_usuarios = new System.Windows.Forms.DataGridView();
-            this.btn_pesquisar = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Usuário = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +42,7 @@
             this.Senha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.editar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.excluir = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btn_pesquisar = new System.Windows.Forms.Button();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_usuarios)).BeginInit();
@@ -58,7 +58,7 @@
             dateTimePicker2.Enabled = false;
             dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
             dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new System.Drawing.Point(1655, 25);
+            dateTimePicker2.Location = new System.Drawing.Point(1512, 27);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new System.Drawing.Size(222, 32);
             dateTimePicker2.TabIndex = 6;
@@ -125,18 +125,6 @@
             this.tbl_usuarios.TabIndex = 15;
             this.tbl_usuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_usuarios_CellContentClick);
             // 
-            // btn_pesquisar
-            // 
-            this.btn_pesquisar.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btn_pesquisar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_pesquisar.BackgroundImage")));
-            this.btn_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btn_pesquisar.Location = new System.Drawing.Point(1853, 135);
-            this.btn_pesquisar.Name = "btn_pesquisar";
-            this.btn_pesquisar.Size = new System.Drawing.Size(39, 34);
-            this.btn_pesquisar.TabIndex = 14;
-            this.btn_pesquisar.UseVisualStyleBackColor = false;
-            this.btn_pesquisar.Click += new System.EventHandler(this.btn_pesquisar_Click);
-            // 
             // Id
             // 
             this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -188,6 +176,19 @@
             this.excluir.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.excluir.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.excluir.Width = 40;
+            // 
+            // btn_pesquisar
+            // 
+            this.btn_pesquisar.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btn_pesquisar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_pesquisar.BackgroundImage")));
+            this.btn_pesquisar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_pesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_pesquisar.Location = new System.Drawing.Point(1853, 135);
+            this.btn_pesquisar.Name = "btn_pesquisar";
+            this.btn_pesquisar.Size = new System.Drawing.Size(39, 34);
+            this.btn_pesquisar.TabIndex = 14;
+            this.btn_pesquisar.UseVisualStyleBackColor = false;
+            this.btn_pesquisar.Click += new System.EventHandler(this.btn_pesquisar_Click);
             // 
             // frm_usuarios
             // 
