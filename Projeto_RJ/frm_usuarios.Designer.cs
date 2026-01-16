@@ -35,6 +35,7 @@
             this.lbl_pesquisa_nome = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tbl_usuarios = new System.Windows.Forms.DataGridView();
+            this.btn_cadastrar_usuario = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Usuário = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -91,7 +92,7 @@
             // 
             this.lbl_pesquisa_nome.AutoSize = true;
             this.lbl_pesquisa_nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pesquisa_nome.Location = new System.Drawing.Point(12, 124);
+            this.lbl_pesquisa_nome.Location = new System.Drawing.Point(12, 123);
             this.lbl_pesquisa_nome.Name = "lbl_pesquisa_nome";
             this.lbl_pesquisa_nome.Size = new System.Drawing.Size(110, 16);
             this.lbl_pesquisa_nome.TabIndex = 11;
@@ -119,11 +120,23 @@
             this.Senha,
             this.editar,
             this.excluir});
-            this.tbl_usuarios.Location = new System.Drawing.Point(12, 175);
+            this.tbl_usuarios.Location = new System.Drawing.Point(2, 229);
             this.tbl_usuarios.Name = "tbl_usuarios";
-            this.tbl_usuarios.Size = new System.Drawing.Size(1880, 548);
+            this.tbl_usuarios.Size = new System.Drawing.Size(1900, 548);
             this.tbl_usuarios.TabIndex = 15;
             this.tbl_usuarios.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tbl_usuarios_CellContentClick);
+            // 
+            // btn_cadastrar_usuario
+            // 
+            this.btn_cadastrar_usuario.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_cadastrar_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cadastrar_usuario.Location = new System.Drawing.Point(1652, 175);
+            this.btn_cadastrar_usuario.Name = "btn_cadastrar_usuario";
+            this.btn_cadastrar_usuario.Size = new System.Drawing.Size(195, 37);
+            this.btn_cadastrar_usuario.TabIndex = 16;
+            this.btn_cadastrar_usuario.Text = "CADASTRAR";
+            this.btn_cadastrar_usuario.UseVisualStyleBackColor = false;
+            this.btn_cadastrar_usuario.Click += new System.EventHandler(this.btn_cadastrar_usuario_Click);
             // 
             // Id
             // 
@@ -136,9 +149,9 @@
             // Nome
             // 
             this.Nome.HeaderText = "Nome";
-            this.Nome.MinimumWidth = 600;
+            this.Nome.MinimumWidth = 400;
             this.Nome.Name = "Nome";
-            this.Nome.Width = 600;
+            this.Nome.Width = 400;
             // 
             // Usuário
             // 
@@ -195,6 +208,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.btn_cadastrar_usuario);
             this.Controls.Add(this.tbl_usuarios);
             this.Controls.Add(this.btn_pesquisar);
             this.Controls.Add(this.textBox1);
@@ -221,6 +235,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_pesquisar;
         private System.Windows.Forms.DataGridView tbl_usuarios;
+        private System.Windows.Forms.Button btn_cadastrar_usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuário;

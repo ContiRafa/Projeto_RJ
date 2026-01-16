@@ -32,10 +32,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_config));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name_header = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_users = new System.Windows.Forms.Button();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            dateTimePicker2.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.CalendarMonthBackground = System.Drawing.Color.DarkOrange;
+            dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonFace;
+            dateTimePicker2.Enabled = false;
+            dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            dateTimePicker2.Location = new System.Drawing.Point(1655, 25);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new System.Drawing.Size(222, 32);
+            dateTimePicker2.TabIndex = 6;
             // 
             // panel1
             // 
@@ -60,37 +75,23 @@
             this.lbl_name_header.TabIndex = 7;
             this.lbl_name_header.Text = "PAINEL INICIAL > CONFIGURAÇÕES";
             // 
-            // dateTimePicker2
+            // btn_users
             // 
-            dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            dateTimePicker2.CalendarForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.CalendarMonthBackground = System.Drawing.Color.DarkOrange;
-            dateTimePicker2.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.CalendarTrailingForeColor = System.Drawing.SystemColors.ButtonFace;
-            dateTimePicker2.Enabled = false;
-            dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
-            dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new System.Drawing.Point(1655, 25);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new System.Drawing.Size(222, 32);
-            dateTimePicker2.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(35, 120);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(229, 51);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Usuários";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_users.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_users.Location = new System.Drawing.Point(35, 120);
+            this.btn_users.Name = "btn_users";
+            this.btn_users.Size = new System.Drawing.Size(229, 51);
+            this.btn_users.TabIndex = 10;
+            this.btn_users.Text = "Usuários";
+            this.btn_users.UseVisualStyleBackColor = true;
+            this.btn_users.Click += new System.EventHandler(this.btn_users_Click);
             // 
             // frm_config
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_users);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frm_config";
@@ -107,6 +108,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_name_header;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_users;
     }
 }

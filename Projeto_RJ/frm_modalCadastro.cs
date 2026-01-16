@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Projeto_RJ
 {
-    public partial class frm_config : Form
+    public partial class frm_modalCadastro : Form
     {
-        public frm_config()
+        public frm_modalCadastro()
         {
             InitializeComponent();
-        }
-
-        private void btn_users_Click(object sender, EventArgs e)
-        {
-            frm_usuarios telaUsers = new frm_usuarios();
-            telaUsers.Show();
         }
     }
 }

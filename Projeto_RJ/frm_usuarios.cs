@@ -43,5 +43,11 @@ namespace Projeto_RJ
         {
             // popular os campos abaixo com os dados do registro selecionado no datagridview
         }
+
+        private void btn_cadastrar_usuario_Click(object sender, EventArgs e)
+        {
+            frm_modalCadastro frm_CadastroUsuario = new frm_modalCadastro();
+            frm_CadastroUsuario.Show();
+        }
     }
 }
