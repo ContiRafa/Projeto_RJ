@@ -113,6 +113,58 @@ namespace Projeto_RJ
         private void button1_Click(object sender, EventArgs e)
         {
             //BOTAO PARA ATUALIZAR AS INFORMAÇÕES DA TELA OU FAZER ESQUEMA AUTOMATICO DE PUSHAR AS INFORMAÇÕES
+            CarregarDadosDoBanco();
+
+        }
+
+        private void CarregarDadosDoBanco()
+        {
+            // LÓGICA PARA CARREGAR OS DADOS DO BANCO DE DADOS E ATUALIZAR AS LABELS NA TELA
+            // Simulação
+            int total = 45;
+            int recepcao = 20;
+            int retirada = 10;
+            int preferencial = 1;
+
+            lblTotal.Text = total.ToString();
+            lblRecepcao.Text = recepcao.ToString();
+            lblRetiradaExames.Text = retirada.ToString();
+            lblPreferencial.Text = preferencial.ToString();
+
+            MessageBox.Show("Dados atualizados com sucesso!", "SUCESSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            if (total == 1)
+            {
+                lbl_qtdPessoas.Text = "PESSOA";
+            }
+            else
+            {
+                lbl_qtdPessoas.Text = "PESSOAS";
+            }
+            if (recepcao == 1)
+            {
+                lbl_pessoas.Text = "PESSOA";
+            }
+            else
+            {
+                lbl_pessoas.Text = "PESSOAS";
+            }
+            if (retirada == 1)
+            {
+                label5.Text = "PESSOA";
+            }
+            else
+            {
+                label5.Text = "PESSOAS";
+            }
+            if (preferencial == 1)
+            {
+                label8.Text = "PESSOA";
+            }
+            else
+            {
+                label8.Text = "PESSOAS";
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

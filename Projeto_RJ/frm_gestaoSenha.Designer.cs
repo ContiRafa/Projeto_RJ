@@ -33,22 +33,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name_header = new System.Windows.Forms.Label();
             this.panel_atendimentoTotal = new System.Windows.Forms.Panel();
-            this.lbl_quantidade = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.lbl_qtdPessoas = new System.Windows.Forms.Label();
             this.lbl_atTotal = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lbl_qtd = new System.Windows.Forms.Label();
+            this.lblRecepcao = new System.Windows.Forms.Label();
             this.lbl_pessoas = new System.Windows.Forms.Label();
             this.lbl_recepcao = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lbl_qtd2 = new System.Windows.Forms.Label();
+            this.lblRetiradaExames = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbl_retiradaExames = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblPreferencial = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel_atendimentoTotal.SuspendLayout();
@@ -99,7 +99,7 @@
             // 
             this.panel_atendimentoTotal.BackColor = System.Drawing.Color.Green;
             this.panel_atendimentoTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_atendimentoTotal.Controls.Add(this.lbl_quantidade);
+            this.panel_atendimentoTotal.Controls.Add(this.lblTotal);
             this.panel_atendimentoTotal.Controls.Add(this.lbl_qtdPessoas);
             this.panel_atendimentoTotal.Controls.Add(this.lbl_atTotal);
             this.panel_atendimentoTotal.ForeColor = System.Drawing.SystemColors.Control;
@@ -108,17 +108,17 @@
             this.panel_atendimentoTotal.Size = new System.Drawing.Size(200, 200);
             this.panel_atendimentoTotal.TabIndex = 13;
             // 
-            // lbl_quantidade
+            // lblTotal
             // 
-            this.lbl_quantidade.AutoSize = true;
-            this.lbl_quantidade.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_quantidade.Location = new System.Drawing.Point(43, 56);
-            this.lbl_quantidade.Name = "lbl_quantidade";
-            this.lbl_quantidade.Size = new System.Drawing.Size(115, 86);
-            this.lbl_quantidade.TabIndex = 2;
-            this.lbl_quantidade.Text = "20";
-            this.lbl_quantidade.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_quantidade.Click += new System.EventHandler(this.lbl_quantidade_Click);
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(43, 56);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(115, 86);
+            this.lblTotal.TabIndex = 2;
+            this.lblTotal.Text = "20";
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTotal.Click += new System.EventHandler(this.lbl_quantidade_Click);
             // 
             // lbl_qtdPessoas
             // 
@@ -149,7 +149,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.lbl_qtd);
+            this.panel2.Controls.Add(this.lblRecepcao);
             this.panel2.Controls.Add(this.lbl_pessoas);
             this.panel2.Controls.Add(this.lbl_recepcao);
             this.panel2.ForeColor = System.Drawing.SystemColors.Control;
@@ -158,17 +158,17 @@
             this.panel2.Size = new System.Drawing.Size(200, 200);
             this.panel2.TabIndex = 14;
             // 
-            // lbl_qtd
+            // lblRecepcao
             // 
-            this.lbl_qtd.AutoSize = true;
-            this.lbl_qtd.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qtd.Location = new System.Drawing.Point(44, 56);
-            this.lbl_qtd.Name = "lbl_qtd";
-            this.lbl_qtd.Size = new System.Drawing.Size(115, 86);
-            this.lbl_qtd.TabIndex = 2;
-            this.lbl_qtd.Text = "10";
-            this.lbl_qtd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_qtd.Click += new System.EventHandler(this.label1_Click);
+            this.lblRecepcao.AutoSize = true;
+            this.lblRecepcao.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecepcao.Location = new System.Drawing.Point(44, 56);
+            this.lblRecepcao.Name = "lblRecepcao";
+            this.lblRecepcao.Size = new System.Drawing.Size(115, 86);
+            this.lblRecepcao.TabIndex = 2;
+            this.lblRecepcao.Text = "10";
+            this.lblRecepcao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRecepcao.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbl_pessoas
             // 
@@ -199,7 +199,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.DarkTurquoise;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.lbl_qtd2);
+            this.panel3.Controls.Add(this.lblRetiradaExames);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.lbl_retiradaExames);
             this.panel3.ForeColor = System.Drawing.SystemColors.Control;
@@ -208,17 +208,17 @@
             this.panel3.Size = new System.Drawing.Size(200, 200);
             this.panel3.TabIndex = 15;
             // 
-            // lbl_qtd2
+            // lblRetiradaExames
             // 
-            this.lbl_qtd2.AutoSize = true;
-            this.lbl_qtd2.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qtd2.Location = new System.Drawing.Point(66, 56);
-            this.lbl_qtd2.Name = "lbl_qtd2";
-            this.lbl_qtd2.Size = new System.Drawing.Size(76, 86);
-            this.lbl_qtd2.TabIndex = 2;
-            this.lbl_qtd2.Text = "2";
-            this.lbl_qtd2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_qtd2.Click += new System.EventHandler(this.label4_Click);
+            this.lblRetiradaExames.AutoSize = true;
+            this.lblRetiradaExames.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRetiradaExames.Location = new System.Drawing.Point(66, 56);
+            this.lblRetiradaExames.Name = "lblRetiradaExames";
+            this.lblRetiradaExames.Size = new System.Drawing.Size(76, 86);
+            this.lblRetiradaExames.TabIndex = 2;
+            this.lblRetiradaExames.Text = "2";
+            this.lblRetiradaExames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblRetiradaExames.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -249,7 +249,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Gold;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.lblPreferencial);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label9);
             this.panel4.ForeColor = System.Drawing.SystemColors.Control;
@@ -258,18 +258,18 @@
             this.panel4.Size = new System.Drawing.Size(200, 200);
             this.panel4.TabIndex = 16;
             // 
-            // label7
+            // lblPreferencial
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(44, 56);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 86);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "20";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.lblPreferencial.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPreferencial.AutoSize = true;
+            this.lblPreferencial.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreferencial.Location = new System.Drawing.Point(44, 56);
+            this.lblPreferencial.Name = "lblPreferencial";
+            this.lblPreferencial.Size = new System.Drawing.Size(115, 86);
+            this.lblPreferencial.TabIndex = 2;
+            this.lblPreferencial.Text = "20";
+            this.lblPreferencial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPreferencial.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -296,26 +296,26 @@
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // button1
+            // btnAtualizar
             // 
-            this.button1.BackColor = System.Drawing.Color.OrangeRed;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(911, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 39);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "ATUALIZAR";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAtualizar.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnAtualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnAtualizar.Location = new System.Drawing.Point(911, 182);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(104, 39);
+            this.btnAtualizar.TabIndex = 17;
+            this.btnAtualizar.Text = "ATUALIZAR";
+            this.btnAtualizar.UseVisualStyleBackColor = false;
+            this.btnAtualizar.Click += new System.EventHandler(this.button1_Click);
             // 
             // frm_gestaoSenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -346,21 +346,21 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_name_header;
         private System.Windows.Forms.Panel panel_atendimentoTotal;
-        private System.Windows.Forms.Label lbl_quantidade;
+        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lbl_qtdPessoas;
         private System.Windows.Forms.Label lbl_atTotal;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lbl_qtd;
+        private System.Windows.Forms.Label lblRecepcao;
         private System.Windows.Forms.Label lbl_pessoas;
         private System.Windows.Forms.Label lbl_recepcao;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lbl_qtd2;
+        private System.Windows.Forms.Label lblRetiradaExames;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbl_retiradaExames;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblPreferencial;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }

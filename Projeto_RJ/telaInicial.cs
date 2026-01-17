@@ -45,7 +45,7 @@ namespace Projeto_RJ
         {
             Form1 tela = new Form1();
 
-            tela.Show();
+            tela.Show();  
         }
 
         private void button3_Click(object sender, EventArgs e)

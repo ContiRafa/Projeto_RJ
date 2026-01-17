@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_controleSenhas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_name_header = new System.Windows.Forms.Label();
-            this.btn_chamarSenha = new System.Windows.Forms.Button();
+            this.btnChamarSenha = new System.Windows.Forms.Button();
             this.btn_refreshSenha = new System.Windows.Forms.Button();
             this.lbl_senhaChamada = new System.Windows.Forms.Label();
             this.panel_senhaChamada = new System.Windows.Forms.Panel();
@@ -47,8 +47,10 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_senhasChamadas = new System.Windows.Forms.Label();
+            this.lblSenhaAtual = new System.Windows.Forms.Label();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
+            this.panel_senhaChamada.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_chamarSenha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_historicoSenhas)).BeginInit();
             this.SuspendLayout();
@@ -93,19 +95,19 @@
             this.lbl_name_header.Text = "PAINEL INICIAL > CONTROLE DE SENHAS";
             this.lbl_name_header.Click += new System.EventHandler(this.lbl_name_header_Click);
             // 
-            // btn_chamarSenha
+            // btnChamarSenha
             // 
-            this.btn_chamarSenha.BackColor = System.Drawing.Color.ForestGreen;
-            this.btn_chamarSenha.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_chamarSenha.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_chamarSenha.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_chamarSenha.Location = new System.Drawing.Point(35, 140);
-            this.btn_chamarSenha.Name = "btn_chamarSenha";
-            this.btn_chamarSenha.Size = new System.Drawing.Size(390, 95);
-            this.btn_chamarSenha.TabIndex = 12;
-            this.btn_chamarSenha.Text = "CHAMAR SENHA";
-            this.btn_chamarSenha.UseVisualStyleBackColor = false;
-            this.btn_chamarSenha.Click += new System.EventHandler(this.btnIniciar_Click);
+            this.btnChamarSenha.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnChamarSenha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChamarSenha.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChamarSenha.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnChamarSenha.Location = new System.Drawing.Point(35, 140);
+            this.btnChamarSenha.Name = "btnChamarSenha";
+            this.btnChamarSenha.Size = new System.Drawing.Size(390, 95);
+            this.btnChamarSenha.TabIndex = 12;
+            this.btnChamarSenha.Text = "CHAMAR SENHA";
+            this.btnChamarSenha.UseVisualStyleBackColor = false;
+            this.btnChamarSenha.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // btn_refreshSenha
             // 
@@ -136,6 +138,7 @@
             // panel_senhaChamada
             // 
             this.panel_senhaChamada.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel_senhaChamada.Controls.Add(this.lblSenhaAtual);
             this.panel_senhaChamada.Location = new System.Drawing.Point(35, 333);
             this.panel_senhaChamada.Name = "panel_senhaChamada";
             this.panel_senhaChamada.Size = new System.Drawing.Size(479, 315);
@@ -172,7 +175,7 @@
             this.Senha,
             this.Mesa,
             this.Guichê});
-            this.tbl_chamarSenha.Location = new System.Drawing.Point(1047, 218);
+            this.tbl_chamarSenha.Location = new System.Drawing.Point(1047, 228);
             this.tbl_chamarSenha.Name = "tbl_chamarSenha";
             this.tbl_chamarSenha.Size = new System.Drawing.Size(782, 280);
             this.tbl_chamarSenha.TabIndex = 18;
@@ -235,6 +238,18 @@
             this.lbl_senhasChamadas.Text = "Senhas chamadas";
             this.lbl_senhasChamadas.Click += new System.EventHandler(this.lbl_senhasChamadas_Click);
             // 
+            // lblSenhaAtual
+            // 
+            this.lblSenhaAtual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSenhaAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenhaAtual.Location = new System.Drawing.Point(0, 0);
+            this.lblSenhaAtual.Name = "lblSenhaAtual";
+            this.lblSenhaAtual.Size = new System.Drawing.Size(479, 315);
+            this.lblSenhaAtual.TabIndex = 0;
+            this.lblSenhaAtual.Text = "SenhaChamada";
+            this.lblSenhaAtual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSenhaAtual.Click += new System.EventHandler(this.lblSenhaAtual_Click);
+            // 
             // frm_controleSenhas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,7 +263,7 @@
             this.Controls.Add(this.comb_tipoGuiche);
             this.Controls.Add(this.panel_senhaChamada);
             this.Controls.Add(this.lbl_senhaChamada);
-            this.Controls.Add(this.btn_chamarSenha);
+            this.Controls.Add(this.btnChamarSenha);
             this.Controls.Add(this.btn_refreshSenha);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -258,6 +273,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel_senhaChamada.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tbl_chamarSenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_historicoSenhas)).EndInit();
             this.ResumeLayout(false);
@@ -269,7 +285,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_name_header;
-        private System.Windows.Forms.Button btn_chamarSenha;
+        private System.Windows.Forms.Button btnChamarSenha;
         private System.Windows.Forms.Button btn_refreshSenha;
         private System.Windows.Forms.Label lbl_senhaChamada;
         private System.Windows.Forms.Panel panel_senhaChamada;
@@ -284,5 +300,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.Label lbl_senhasChamadas;
+        private System.Windows.Forms.Label lblSenhaAtual;
     }
 }

@@ -71,5 +71,10 @@ namespace Projeto_RJ
         {
 
         }
+
+        private void lblSenhaAtual_Click(object sender, EventArgs e)
+        {
+            lblSenhaAtual.Text = "P005";
+        }
     }
 }
