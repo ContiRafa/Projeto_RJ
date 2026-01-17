@@ -48,6 +48,8 @@ namespace Projeto_RJ
         {
             frm_modalCadastro frm_CadastroUsuario = new frm_modalCadastro();
             frm_CadastroUsuario.Show();
+
+            
         }
     }
 }

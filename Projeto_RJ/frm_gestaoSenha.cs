@@ -135,7 +135,7 @@ namespace Projeto_RJ
 
             if (total == 1)
             {
-                lbl_qtdPessoas.Text = "PESSOA";
+                lbl_qtdPessoas.Text = "PESSOA" + ContentAlignment.MiddleCenter;
             }
             else
             {

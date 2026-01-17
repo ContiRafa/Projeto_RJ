@@ -110,25 +110,22 @@
             // 
             // lblTotal
             // 
-            this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(43, 56);
+            this.lblTotal.Location = new System.Drawing.Point(-1, 56);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(115, 86);
+            this.lblTotal.Size = new System.Drawing.Size(200, 86);
             this.lblTotal.TabIndex = 2;
-            this.lblTotal.Text = "20";
             this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblTotal.Click += new System.EventHandler(this.lbl_quantidade_Click);
             // 
             // lbl_qtdPessoas
             // 
-            this.lbl_qtdPessoas.AutoSize = true;
+            this.lbl_qtdPessoas.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_qtdPessoas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_qtdPessoas.Location = new System.Drawing.Point(17, 174);
+            this.lbl_qtdPessoas.Location = new System.Drawing.Point(3, 174);
             this.lbl_qtdPessoas.Name = "lbl_qtdPessoas";
-            this.lbl_qtdPessoas.Size = new System.Drawing.Size(166, 16);
+            this.lbl_qtdPessoas.Size = new System.Drawing.Size(192, 16);
             this.lbl_qtdPessoas.TabIndex = 1;
-            this.lbl_qtdPessoas.Text = "PESSOAS CHAMADAS";
             this.lbl_qtdPessoas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_qtdPessoas.Click += new System.EventHandler(this.lbl_qtdPessoas_Click);
             // 
@@ -160,25 +157,21 @@
             // 
             // lblRecepcao
             // 
-            this.lblRecepcao.AutoSize = true;
             this.lblRecepcao.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecepcao.Location = new System.Drawing.Point(44, 56);
+            this.lblRecepcao.Location = new System.Drawing.Point(-1, 56);
             this.lblRecepcao.Name = "lblRecepcao";
-            this.lblRecepcao.Size = new System.Drawing.Size(115, 86);
+            this.lblRecepcao.Size = new System.Drawing.Size(200, 86);
             this.lblRecepcao.TabIndex = 2;
-            this.lblRecepcao.Text = "10";
             this.lblRecepcao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblRecepcao.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbl_pessoas
             // 
-            this.lbl_pessoas.AutoSize = true;
             this.lbl_pessoas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_pessoas.Location = new System.Drawing.Point(18, 174);
+            this.lbl_pessoas.Location = new System.Drawing.Point(3, 174);
             this.lbl_pessoas.Name = "lbl_pessoas";
-            this.lbl_pessoas.Size = new System.Drawing.Size(166, 16);
+            this.lbl_pessoas.Size = new System.Drawing.Size(196, 16);
             this.lbl_pessoas.TabIndex = 1;
-            this.lbl_pessoas.Text = "PESSOAS CHAMADAS";
             this.lbl_pessoas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_pessoas.Click += new System.EventHandler(this.label2_Click);
             // 
@@ -210,25 +203,21 @@
             // 
             // lblRetiradaExames
             // 
-            this.lblRetiradaExames.AutoSize = true;
             this.lblRetiradaExames.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRetiradaExames.Location = new System.Drawing.Point(66, 56);
+            this.lblRetiradaExames.Location = new System.Drawing.Point(-1, 56);
             this.lblRetiradaExames.Name = "lblRetiradaExames";
-            this.lblRetiradaExames.Size = new System.Drawing.Size(76, 86);
+            this.lblRetiradaExames.Size = new System.Drawing.Size(200, 86);
             this.lblRetiradaExames.TabIndex = 2;
-            this.lblRetiradaExames.Text = "2";
             this.lblRetiradaExames.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblRetiradaExames.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 174);
+            this.label5.Location = new System.Drawing.Point(3, 174);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 16);
+            this.label5.Size = new System.Drawing.Size(192, 16);
             this.label5.TabIndex = 1;
-            this.label5.Text = "PESSOAS CHAMADAS";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
@@ -261,25 +250,21 @@
             // lblPreferencial
             // 
             this.lblPreferencial.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblPreferencial.AutoSize = true;
             this.lblPreferencial.Font = new System.Drawing.Font("Microsoft YaHei", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreferencial.Location = new System.Drawing.Point(44, 56);
+            this.lblPreferencial.Location = new System.Drawing.Point(-1, 56);
             this.lblPreferencial.Name = "lblPreferencial";
-            this.lblPreferencial.Size = new System.Drawing.Size(115, 86);
+            this.lblPreferencial.Size = new System.Drawing.Size(200, 86);
             this.lblPreferencial.TabIndex = 2;
-            this.lblPreferencial.Text = "20";
             this.lblPreferencial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblPreferencial.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 174);
+            this.label8.Location = new System.Drawing.Point(3, 174);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 16);
+            this.label8.Size = new System.Drawing.Size(192, 16);
             this.label8.TabIndex = 1;
-            this.label8.Text = "PESSOAS CHAMADAS";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
@@ -347,11 +332,9 @@
         private System.Windows.Forms.Label lbl_name_header;
         private System.Windows.Forms.Panel panel_atendimentoTotal;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Label lbl_qtdPessoas;
         private System.Windows.Forms.Label lbl_atTotal;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblRecepcao;
-        private System.Windows.Forms.Label lbl_pessoas;
         private System.Windows.Forms.Label lbl_recepcao;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblRetiradaExames;
@@ -362,5 +345,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnAtualizar;
+        public System.Windows.Forms.Label lbl_qtdPessoas;
+        private System.Windows.Forms.Label lbl_pessoas;
     }
 }
