@@ -34,8 +34,8 @@
             this.lbl_name_header = new System.Windows.Forms.Label();
             this.btnChamarSenha = new System.Windows.Forms.Button();
             this.btn_refreshSenha = new System.Windows.Forms.Button();
-            this.lbl_senhaChamada = new System.Windows.Forms.Label();
             this.panel_senhaChamada = new System.Windows.Forms.Panel();
+            this.lblSenhaAtual = new System.Windows.Forms.Label();
             this.comb_tipoGuiche = new System.Windows.Forms.ComboBox();
             this.lbl_selecionarServico = new System.Windows.Forms.Label();
             this.tbl_chamarSenha = new System.Windows.Forms.DataGridView();
@@ -47,7 +47,8 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_senhasChamadas = new System.Windows.Forms.Label();
-            this.lblSenhaAtual = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.lbl_senhaChamada = new System.Windows.Forms.Label();
             dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel_senhaChamada.SuspendLayout();
@@ -122,19 +123,6 @@
             this.btn_refreshSenha.UseVisualStyleBackColor = false;
             this.btn_refreshSenha.Click += new System.EventHandler(this.btn_refreshSenha_Click);
             // 
-            // lbl_senhaChamada
-            // 
-            this.lbl_senhaChamada.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_senhaChamada.AutoSize = true;
-            this.lbl_senhaChamada.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_senhaChamada.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_senhaChamada.Location = new System.Drawing.Point(27, 275);
-            this.lbl_senhaChamada.Name = "lbl_senhaChamada";
-            this.lbl_senhaChamada.Size = new System.Drawing.Size(462, 46);
-            this.lbl_senhaChamada.TabIndex = 14;
-            this.lbl_senhaChamada.Text = "SENHA A SER CHAMADA";
-            this.lbl_senhaChamada.Click += new System.EventHandler(this.lbl_senhaChamada_Click);
-            // 
             // panel_senhaChamada
             // 
             this.panel_senhaChamada.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -144,6 +132,17 @@
             this.panel_senhaChamada.Size = new System.Drawing.Size(479, 315);
             this.panel_senhaChamada.TabIndex = 15;
             this.panel_senhaChamada.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_senhaChamada_Paint);
+            // 
+            // lblSenhaAtual
+            // 
+            this.lblSenhaAtual.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSenhaAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenhaAtual.Location = new System.Drawing.Point(0, 0);
+            this.lblSenhaAtual.Name = "lblSenhaAtual";
+            this.lblSenhaAtual.Size = new System.Drawing.Size(479, 315);
+            this.lblSenhaAtual.TabIndex = 0;
+            this.lblSenhaAtual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSenhaAtual.Click += new System.EventHandler(this.lblSenhaAtual_Click);
             // 
             // comb_tipoGuiche
             // 
@@ -238,17 +237,31 @@
             this.lbl_senhasChamadas.Text = "Senhas chamadas";
             this.lbl_senhasChamadas.Click += new System.EventHandler(this.lbl_senhasChamadas_Click);
             // 
-            // lblSenhaAtual
+            // button1
             // 
-            this.lblSenhaAtual.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSenhaAtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenhaAtual.Location = new System.Drawing.Point(0, 0);
-            this.lblSenhaAtual.Name = "lblSenhaAtual";
-            this.lblSenhaAtual.Size = new System.Drawing.Size(479, 315);
-            this.lblSenhaAtual.TabIndex = 0;
-            this.lblSenhaAtual.Text = "SenhaChamada";
-            this.lblSenhaAtual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblSenhaAtual.Click += new System.EventHandler(this.lblSenhaAtual_Click);
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(538, 140);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(390, 95);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "CANCELAR SENHA";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // lbl_senhaChamada
+            // 
+            this.lbl_senhaChamada.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_senhaChamada.AutoSize = true;
+            this.lbl_senhaChamada.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_senhaChamada.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbl_senhaChamada.Location = new System.Drawing.Point(27, 258);
+            this.lbl_senhaChamada.Name = "lbl_senhaChamada";
+            this.lbl_senhaChamada.Size = new System.Drawing.Size(462, 46);
+            this.lbl_senhaChamada.TabIndex = 14;
+            this.lbl_senhaChamada.Text = "SENHA A SER CHAMADA";
+            this.lbl_senhaChamada.Click += new System.EventHandler(this.lbl_senhaChamada_Click);
             // 
             // frm_controleSenhas
             // 
@@ -256,6 +269,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbl_senhasChamadas);
             this.Controls.Add(this.tbl_historicoSenhas);
             this.Controls.Add(this.tbl_chamarSenha);
@@ -287,7 +301,6 @@
         private System.Windows.Forms.Label lbl_name_header;
         private System.Windows.Forms.Button btnChamarSenha;
         private System.Windows.Forms.Button btn_refreshSenha;
-        private System.Windows.Forms.Label lbl_senhaChamada;
         private System.Windows.Forms.Panel panel_senhaChamada;
         private System.Windows.Forms.ComboBox comb_tipoGuiche;
         private System.Windows.Forms.Label lbl_selecionarServico;
@@ -301,5 +314,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.Label lbl_senhasChamadas;
         private System.Windows.Forms.Label lblSenhaAtual;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbl_senhaChamada;
     }
 }
